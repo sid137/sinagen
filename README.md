@@ -32,7 +32,7 @@ out the following tasks:
 * Initializes a git repository in the app directory, and makes an initial commit
   of all the files, and creates a .gitignore
 
-* Runs a simple rspec test to make sure that the setup as gone properly, and
+* Runs a simple rspec test, spec/setup_spec.rb, to make sure that the setup as gone properly, and
   that the app loads and runs on your system
 
 * runs 'bundle install' to install teh necessary gems and generate the
