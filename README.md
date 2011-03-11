@@ -74,7 +74,7 @@ called NAME
 
 ### This app: 
 
-  - Contains an inline haml layout that loads JQuery from the [oogle CDN](http://code.google.com/apis/libraries/devguide.html#jquery), [HTML5 Shiv](http://code.google.com/p/html5shiv/), and [IE9.js](http://code.google.com/p/ie7-js/) for HTML5 compatibility
+  - Contains an inline haml layout that loads JQuery from the [Google CDN](http://code.google.com/apis/libraries/devguide.html#jquery), [HTML5 Shiv](http://code.google.com/p/html5shiv/), and [IE9.js](http://code.google.com/p/ie7-js/) for HTML5 compatibility
 
   - has Compass configured for css generation.  To generate css run
 
