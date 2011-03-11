@@ -38,7 +38,7 @@ out the following tasks:
 * runs 'bundle install' to install the necessary gems and generate the
   Gemfile.lock
 
-The sinagen command  generates the following layout in the project directory
+The **sinagen** command generates the following layout in the project directory
 called NAME
 
     project/
