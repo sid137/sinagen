@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sinagen}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sidney Burks"]
@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "bin/sinagen",
     "lib/sinagen.rb",
+    "sinagen.gemspec",
     "spec/sinagen_spec.rb",
     "spec/spec_helper.rb",
     "tags",

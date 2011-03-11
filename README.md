@@ -16,12 +16,93 @@ Create an app folder, where NAME is the project name
 
 ## What it does
 
-TODO
+When you run the sinagen command, it generates a project directory and carries
+out the following tasks:
+
+* Creates the root project directory with a NAME.rb sinatra file, a Gemfile, and
+  a config.ru file.  The Sinatra app uses a  modular format
+
+
+* Sets up Rspec for the Sinatra app to use for development
+
+* Installs the Compass css framework for sass and simple css layouts
+
+* Initializes a git repository in the app directory, and makes an initial commit
+  of all the files, and creates a .gitignore
+
+* Runs a simple rspec test to make sure that the setup as gone properly, and
+  that the app loads and runs on your system
+
+* runs 'bundle install' to install teh necessary gems and generate the
+  Gemfile.lock
+
+The sinagen command  generates the following layout in the project directory
+called NAME
+
+project/
+    README.md
+    config.rb                # Compass configuration
+    config.ru                # For rack
+    Gemfile                  # Some basic gems prefilled
+    Gemfile.lock
+    .git/                   
+    .gitignore      
+    .rspec                   # Rspec config file
+    public/
+        images/
+        stylesheets/
+            ie.css
+            print.css
+            screen.css
+            main.css
+    spec/
+        spec_helper.rb        
+        setup_spec.rb        # Test app setup
+    .sass-cache              # Compass tmp files
+    view/
+        stylesheets/
+            ie.sass
+            print.sass
+            screen.sass
+            main.sass
+                partials/
+                    _base.sass
+
+### The Sinatra App
+
+This app: 
+
+  - Contains an inline haml layout file that loads JQuery from the Google CDN, HTML5 Shiv, and IE9.js for HTML5 compatibility
+
+  - has compass configured for css generation.  To generate css run
+
+    compass compile .
+
+  - uses Rspec for testing
+
+
+
+## To Deploy
+
+Follow the typical Heroku deployment instructions to deploy to heroku
+
+    heroku create appname
+
+    git push heroku master
+
+
+## Todo
+
+Alot..
+
 
 ## Limitations
 
 Developed on ruby 1.9.2.  Probably does not work on earlier versions of Ruby
 
+No tests yet
+
+Pre-alpha.... 
 
 == Contributing to sinagen
  

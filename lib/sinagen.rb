@@ -4,14 +4,6 @@ require 'thor/group'
 require 'thor/util'
 require 'active_support/inflector'
 
-#  Why can't I use this directly in my class?
-#c#l#a#s#s #S#t#r#i#n#g
-  #i#n#c#l#u#d#e #T#h#o#r#:#:#U#t#i#l
-
-  #d#e#f #c#a#m#e#l#_#c#a#s#e
-    #T#h#o#r#:#:#U#t#i#l#.#c#a#m#e#l#_#c#a#s#e #s#e#l#f
-  #e#n#d
-#e#n#d
 
 class Sinagen < Thor::Group
   include Thor::Actions
@@ -49,6 +41,12 @@ class Sinagen < Thor::Group
       # TODO: Make quiet
     end
   end 
+
+  def run_bundler
+    in_root do
+      run 'bundle install'
+    end
+  end
 
   def create_git_repository
     in_root do
