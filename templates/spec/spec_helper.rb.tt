@@ -3,12 +3,12 @@ require 'rspec'
 require 'rack/test'
 
 # Set sinatra to run in "test" environment
-<%= name.camel_case %>::Application.set :environment, :test
+<%= name.camelize %>::Application.set :environment, :test
 
 Rspec.configure do |config|
   include Rack::Test::Methods  
 end 
 
 def app
-  <%= name.camel_case %>::Application
+  <%= name.camelize %>::Application
 end

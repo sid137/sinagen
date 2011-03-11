@@ -1,2 +1,2 @@
 require './<%= name %>.rb'
-run <%= name.camel_case %>::Application
+run <%= name.camelize %>::Application

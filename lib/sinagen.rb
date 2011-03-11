@@ -2,15 +2,16 @@
 require 'thor'
 require 'thor/group'
 require 'thor/util'
+require 'active_support/inflector'
 
 #  Why can't I use this directly in my class?
-class String
-  include Thor::Util
+#c#l#a#s#s #S#t#r#i#n#g
+  #i#n#c#l#u#d#e #T#h#o#r#:#:#U#t#i#l
 
-  def camel_case
-    Thor::Util.camel_case self
-  end
-end
+  #d#e#f #c#a#m#e#l#_#c#a#s#e
+    #T#h#o#r#:#:#U#t#i#l#.#c#a#m#e#l#_#c#a#s#e #s#e#l#f
+  #e#n#d
+#e#n#d
 
 class Sinagen < Thor::Group
   include Thor::Actions
@@ -68,7 +69,11 @@ class Sinagen < Thor::Group
   end
 
   private
+
   # Utility methods stolen from Rails
+  #
+  # https://github.com/rails/rails/blob/master/railties/lib/rails/generators/actions.rb
+  # https://github.com/rails/rails/blob/master/railties/lib/rails/generators/rails/app/app_generator.rb
 
   # Run a command in git.
   #

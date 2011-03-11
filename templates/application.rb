@@ -3,7 +3,7 @@ require 'haml'
 require 'yaml'
 require 'logger'
 
-module <%= name.camel_case %>
+module <%= name.camelize %>
   class Application < Sinatra::Base
     configure do
       enable :logging, :inline_templates
