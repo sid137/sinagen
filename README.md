@@ -39,34 +39,34 @@ out the following tasks:
 The sinagen command  generates the following layout in the project directory
 called NAME
 
-project/
-    README.md
-    config.rb                # Compass configuration
-    config.ru                # For rack
-    Gemfile                  # Some basic gems prefilled
-    Gemfile.lock
-    .git/                   
-    .gitignore      
-    .rspec                   # Rspec config file
-    public/
-        images/
-        stylesheets/
-            ie.css
-            print.css
-            screen.css
-            main.css
-    spec/
-        spec_helper.rb        
-        setup_spec.rb        # Test app setup
-    .sass-cache              # Compass tmp files
-    view/
-        stylesheets/
-            ie.sass
-            print.sass
-            screen.sass
-            main.sass
-                partials/
-                    _base.sass
+    project/
+        README.md
+        config.rb                # Compass configuration
+        config.ru                # For rack
+        Gemfile                  # Some basic gems prefilled
+        Gemfile.lock
+        .git/                   
+        .gitignore      
+        .rspec                   # Rspec config file
+        public/
+            images/
+            stylesheets/
+                ie.css
+                print.css
+                screen.css
+                main.css
+        spec/
+            spec_helper.rb        
+            setup_spec.rb        # Test app setup
+        .sass-cache              # Compass tmp files
+        view/
+            stylesheets/
+                ie.sass
+                print.sass
+                screen.sass
+                main.sass
+                    partials/
+                        _base.sass
 
 ### The Sinatra App
 
