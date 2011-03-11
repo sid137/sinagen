@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Actions	lib/sinagen/actions.rb	/^module Actions$/;"	m
+Application	lib/sinagen/templates/application.rb	/^  class Application < Sinatra::Base$/;"	c
+Sinatra	lib/sinagen/sinatra.rb	/^class Sinatra < Thor::Group$/;"	c
+String	lib/sinagen/sinatra.rb	/^class String$/;"	c
+add_source	lib/sinagen/actions.rb	/^  def add_source(source, options={})$/;"	f	class:Actions
+camel_case	lib/sinagen/sinatra.rb	/^  def camel_case$/;"	f	class:String
+create_git_repository	lib/sinagen/sinatra.rb	/^  def create_git_repository$/;"	f	class:Sinatra
+create_root_directory	lib/sinagen/sinatra.rb	/^  def create_root_directory$/;"	f	class:Sinatra
+finish	lib/sinagen/sinatra.rb	/^  def finish$/;"	f	class:Sinatra
+gem	lib/sinagen/actions.rb	/^  def gem(*args)$/;"	f	class:Actions
+git	lib/sinagen/actions.rb	/^  def git(command={})$/;"	f	class:Actions
+install_compass	lib/sinagen/sinatra.rb	/^  def install_compass$/;"	f	class:Sinatra
+install_rspec	lib/sinagen/sinatra.rb	/^  def install_rspec$/;"	f	class:Sinatra
+lib	lib/sinagen/actions.rb	/^  def lib(filename, data=nil, &block)$/;"	f	class:Actions
+log	lib/sinagen/actions.rb	/^    def log(*args)$/;"	f	class:Actions.route
+rake	lib/sinagen/actions.rb	/^  def rake(command, options={})$/;"	f	class:Actions
+rakefile	lib/sinagen/actions.rb	/^  def rakefile(filename, data=nil, &block)$/;"	f	class:Actions
+readme	lib/sinagen/actions.rb	/^  def readme(path)$/;"	f	class:Actions.route
+route	lib/sinagen/actions.rb	/^  def route(routing_code)$/;"	f	class:Actions
+setup	lib/sinagen/sinatra.rb	/^  def setup$/;"	f	class:Sinatra
