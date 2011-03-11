@@ -7,6 +7,7 @@ gem "compass"
 gem "rspec"
 gem "sinatra"
 gem "rack-test"
+gem "heroku"
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
