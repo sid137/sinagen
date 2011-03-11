@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
 
 require 'sinagen.rb'
+puts "Hello from Sinagem"
