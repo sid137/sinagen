@@ -52,7 +52,7 @@ called NAME
         .rspec                   # Rspec config file
         public/
             images/
-            stylesheets/
+            stylesheets/         # CSS files generated from compiled sass
                 ie.css
                 print.css
                 screen.css
@@ -60,7 +60,7 @@ called NAME
         spec/
             spec_helper.rb        
             setup_spec.rb        # Test app setup
-        .sass-cache              # Compass tmp files
+        .sass-cache              # Compass tmp files, under gitignore
         view/
             stylesheets/
                 ie.sass
