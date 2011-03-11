@@ -45,7 +45,7 @@ class Sinagen < Thor::Group
       run 'compass init  --quiet --css-dir=public/stylesheets \
       --sass-dir=views/stylesheets --javascripts-dir=public/javascripts \
       --images-dir=public/images -x sass --using blueprint/basic'  
-      # TODO: Maake quiet
+      # TODO: Make quiet
     end
   end 
 
