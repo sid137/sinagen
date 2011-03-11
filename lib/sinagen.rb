@@ -20,7 +20,7 @@ class Sinangen < Thor::Group
   argument :name, :type => :string, :desc => "Th app name for your sinatra app"
   desc "Generates a skeleton Sinatra app ready to deploy to heroku"
 
-  source_root File.expand_path('../templates', __FILE__)
+  source_root File.expand_path('../../templates', __FILE__)
   #    models
   #    db/
   #       migrate/
