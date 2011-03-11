@@ -12,7 +12,7 @@ class String
   end
 end
 
-class Sinangen < Thor::Group
+class Sinagen < Thor::Group
   include Thor::Actions
 
   argument :name, :type => :string, :desc => "Th app name for your sinatra app"
