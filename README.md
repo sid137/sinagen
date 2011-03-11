@@ -22,12 +22,12 @@ out the following tasks:
 * Creates the root project directory with a NAME.rb sinatra file, a Gemfile, and
   a config.ru file.  The Sinatra app uses a "modular" format (as opposed to a
   Classic top-level format.  See
-  [Modular vs. Classic](http://www.sinatrarb.com/intro#Modular%20vs.%20Classic%20Style) for details)
+  [Sinatra Readme: Modular vs. Classic](http://www.sinatrarb.com/intro#Modular%20vs.%20Classic%20Style) for details)
 
 
 * Sets up Rspec for the Sinatra app to use for development
 
-* Installs the Compass css framework for sass and simple css layouts
+* Installs the [Compass CSS framework](http://compass-style.org/) for sass and simple css layouts
 
 * Initializes a git repository in the app directory, and makes an initial commit
   of all the files, and creates a .gitignore
