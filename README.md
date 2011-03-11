@@ -84,7 +84,7 @@ called NAME
 
 
 
-## To Deploy
+## To Deploy to Heroku
 
 Follow the typical Heroku deployment instructions to deploy to heroku
 
