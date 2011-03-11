@@ -35,7 +35,7 @@ out the following tasks:
 * Runs a simple rspec test, spec/setup_spec.rb, to make sure that the setup as gone properly, and
   that the app loads and runs on your system
 
-* runs 'bundle install' to install teh necessary gems and generate the
+* runs 'bundle install' to install the necessary gems and generate the
   Gemfile.lock
 
 The sinagen command  generates the following layout in the project directory
