@@ -20,7 +20,9 @@ When you run the sinagen command, it generates a project directory and carries
 out the following tasks:
 
 * Creates the root project directory with a NAME.rb sinatra file, a Gemfile, and
-  a config.ru file.  The Sinatra app uses a  modular format
+  a config.ru file.  The Sinatra app uses a "modular" format (as opposed to a
+  Classic top-level format.  See
+  http://www.sinatrarb.com/intro#Modular%20vs.%20Classic%20Style for details)
 
 
 * Sets up Rspec for the Sinatra app to use for development
