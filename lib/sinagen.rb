@@ -36,7 +36,7 @@ class Sinagen < Thor::Group
   def install_rspec
     directory "spec" 
     template ".rspec"
-      # Edit to only make sinatra necessary dirs
+    # TODO: Edit to only make sinatra necessary dirs
   end 
 
   def install_compass
@@ -45,6 +45,7 @@ class Sinagen < Thor::Group
       run 'compass init  --quiet --css-dir=public/stylesheets \
       --sass-dir=views/stylesheets --javascripts-dir=public/javascripts \
       --images-dir=public/images -x sass --using blueprint/basic'  
+      # TODO: Maake quiet
     end
   end 
 
@@ -52,7 +53,7 @@ class Sinagen < Thor::Group
     in_root do
       template ".gitignore"
       git :init
-      run("find . \\( -type d -empty \\) -and \\( -not -regex ./\\.git.* \\) -exec touch {}/.gitignore \\;")
+      run "find . \\( -type d -empty \\) -and \\( -not -regex ./\\.git.* \\) -exec touch {}/.gitignore \\;"
       git :add => "."
       git :commit => "-q -a -m 'Finishing application setup'"
     end
