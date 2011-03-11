@@ -2,7 +2,6 @@
 require 'thor'
 require 'thor/group'
 require 'thor/util'
-require_relative 'actions.rb'
 
 #  Why can't I use this directly in my class?
 class String
@@ -15,7 +14,6 @@ end
 
 class Sinangen < Thor::Group
   include Thor::Actions
-  include Actions
 
   argument :name, :type => :string, :desc => "Th app name for your sinatra app"
   desc "Generates a skeleton Sinatra app ready to deploy to heroku"
@@ -68,4 +66,47 @@ class Sinangen < Thor::Group
     end
   end
 
+  private
+  # Utility methods stolen from Rails
+
+  # Run a command in git.
+  #
+  # ==== Examples
+  #
+  #   git :init
+  #   git :add => "this.file that.rb"
+  #   git :add => "onefile.rb", :rm => "badfile.cxx"
+  #
+  def git(command={})
+    if command.is_a?(Symbol)
+      run "git #{command}"
+    else
+      command.each do |command, options|
+        run "git #{command} #{options}"
+      end
+    end
+  end
+
+  # Reads the given file at the source root and prints it in the console.
+  #
+  # === Example
+  #
+  #   readme "README"
+  #
+  def readme(path)
+    log File.read(find_in_source_paths(path))
+  end
+
+  # Define log for backwards compatibility. If just one argument is sent,
+  # invoke say, otherwise invoke say_status. Differently from say and
+  # similarly to say_status, this method respects the quiet? option given.
+  #
+  def log(*args)
+    if args.size == 1
+      say args.first.to_s unless options.quiet?
+    else
+      args << (self.behavior == :invoke ? :green : :red)
+      say_status *args
+    end
+  end
 end
