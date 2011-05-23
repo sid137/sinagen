@@ -1,7 +1,7 @@
 # Sinagen - A Sinatra app generator
 
 This gem generates an application skeleton for developing Sinatra apps.  The
-application can the be uploaded to Heroku for usage
+application can then be deployed directly to Heroku 
 
 
 ## Installation
