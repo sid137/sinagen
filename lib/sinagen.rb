@@ -32,16 +32,6 @@ class Sinagen < Thor::Group
     # TODO: Edit to only make sinatra necessary dirs
   end 
 
-  def install_compass
-    in_root do
-      copy_file "views/stylesheets/main.sass"
-      run 'compass init  --quiet --css-dir=public/stylesheets \
-      --sass-dir=views/stylesheets --javascripts-dir=public/javascripts \
-      --images-dir=public/images -x sass --using blueprint/basic'  
-      # TODO: Make quiet
-    end
-  end 
-
   def run_bundler
     in_root do
       run 'bundle install'

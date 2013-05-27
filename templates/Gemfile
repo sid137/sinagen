@@ -5,21 +5,7 @@ gem 'activerecord'
 gem 'haml'
 
 group :development, :test do
-  gem "heroku"
-
   gem "sqlite3-ruby", :require => 'sqlite3' 
-  gem "ruby-debug19", :require => 'ruby-debug'
-
-  # css framework for development machine
-  gem "compass"
-
   gem "rspec"
   gem "rack-test"
-
-  # model layer, test data generation
-  #gem "annotate-models"
-  #gem "factory_girl_rails"
-  #gem "faker"
-  #gem 'forgery'
-
 end
